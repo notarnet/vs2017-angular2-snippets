@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<CodeSnippets  
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+    <CodeSnippet Format="1.0.0">  
+        <Header>  
+            <Title>Subscribe</Title>  
+            <Description>Angular observable subscribe snippet</Description>  
+            <Shortcut>ngxSubscribe</Shortcut>  
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>  
+        <Snippet>  
+            <Declarations>
+                <Literal>
+                    <ID>service</ID>
+                    <Default>service</Default>
+                </Literal>  
+                <Literal>
+                    <ID>function</ID>
+                    <Default>function</Default>
+                </Literal>  
+                <Literal>
+                    <ID>arg</ID>
+                    <Default>arg</Default>
+                </Literal>  
+                <Literal>
+                    <ID>property</ID>
+                    <Default>property</Default>
+                </Literal>                                                  
+            </Declarations>
+            <Code Language="TypeScript">  
+                <![CDATA[this.$service$.$function$
+                    .subscribe($arg$ => this.$property$ = $arg$);
+      
+                ]]>  
+            </Code>  
+        </Snippet>  
+    </CodeSnippet>  
+</CodeSnippets>  

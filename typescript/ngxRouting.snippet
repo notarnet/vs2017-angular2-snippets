@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<CodeSnippets  
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+    <CodeSnippet Format="1.0.0">  
+        <Header>  
+            <Title>Angular Routes</Title>  
+            <Description>Angular routing file snippet</Description>  
+            <Shortcut>ngxRouting</Shortcut>  
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>  
+        <Snippet>  
+            <Declarations>
+                <Literal>
+                    <ID>Name</ID>
+                    <Default>Name</Default>
+                </Literal>  
+                <Literal>
+                    <ID>name</ID>
+                    <Default>name</Default>
+                </Literal>  
+                <Literal>
+                    <ID>path</ID>
+                    <Default>path</Default>
+                </Literal>                 
+                <Literal>
+                    <ID>childRoot</ID>
+                    <Default>Child|Root</Default>
+                </Literal>               
+            </Declarations>
+            <Code Language="TypeScript">  
+                <![CDATA[import { NgModule } from '@angular/core';
+                import { Routes, RouterModule } from '@angular/router';
+                
+                import { $Name$Component } from './$name$.component';
+                
+                const routes: Routes = [
+                    { path: '$path$', component: $Name$Component },
+                ];
+                
+                @NgModule({
+                    imports: [RouterModule.for$childRoot$(routes)],
+                    exports: [RouterModule],
+                })
+                export class $Name$RoutingModule { }
+                
+                export const routedComponents = [$Name$Component];
+                ]]>  
+            </Code>  
+        </Snippet>  
+    </CodeSnippet>  
+</CodeSnippets>  

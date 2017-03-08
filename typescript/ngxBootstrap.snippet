@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<CodeSnippets  
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+    <CodeSnippet Format="1.0.0">  
+        <Header>  
+            <Title>Angular Bootstrapping</Title>  
+            <Description>Angular bootstrap snippet</Description>  
+            <Shortcut>ngxBootstrap</Shortcut>  
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>  
+        <Snippet>  
+            <Declarations>
+                <Literal>
+                    <ID>App</ID>
+                    <Default>App</Default>
+                </Literal>  
+                <Literal>
+                    <ID>app</ID>
+                    <Default>app</Default>
+                </Literal>                                               
+            </Declarations>
+            <Code Language="TypeScript">  
+                <![CDATA[import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+      
+                import { $App$Module } from './$app$.module';
+                
+                platformBrowserDynamic().bootstrapModule($App$Module)
+                    .then(success => console.log(`Bootstrap success`))
+                    .catch(error => console.log(error));
+                
+                ]]>  
+            </Code>  
+        </Snippet>  
+    </CodeSnippet>  
+</CodeSnippets>  

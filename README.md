@@ -1,51 +1,31 @@
-# Angular TypeScript Snippets for VS Code
+# Angular TypeScript Snippets for Visual Studio 2017
 
 **Now Updated for Angular 2.4 release**
 
-This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
-
-![Use Extension](images/use-extension.gif)
+This project is a porting of amazing John Papa Angular 2 snippets for Visual Studio 2017
 
 ## Usage
-Type part of a snippet, press `enter`, and the snippet unfolds.
+Type part of a snippet, press `tab`, and the snippet unfolds.
 
 ### TypeScript Snippets
 ```typescript
-a-bootstrap       // Angular bootstrapping, for main.ts
-a-component       // Angular component
-a-component-root  // Angular root app component
-a-directive       // Angular directive
-a-http-get        // Angular http.get with Rx Observable
-a-module          // Angular module
-a-module-root     // Angular root app module
-a-pipe            // Angular pipe
-a-routing         // Angular routing
-a-service         // Angular service
-a-subscribe       // Angular Rx Observable subscription
+ngxBootstrap       // Angular bootstrapping, for main.ts
+ngxComponent       // Angular component
+ngxComponentRoot   // Angular root app component
+ngxDirective       // Angular directive
+ngxHttpGet         // Angular http.get with Rx Observable
+ngxModule          // Angular module
+ngxModuleRoot      // Angular root app module
+ngxPipe            // Angular pipe
+ngxRouting         // Angular routing
+ngxService         // Angular service
+ngxSubscribe       // Angular Rx Observable subscription
 ```
-
-###HTML Snippets
-```html
-a-ngClass
-a-ngFor
-a-ngIf
-a-ngModel
-a-routerLink
-a-ngStyle
-a-ngSwitch
-a-prej
-a-preja
-```
-
-Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
 
 ## Installation
 
-1. Install Visual Studio Code 0.10.1 or higher
-2. Launch Code
-3. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
-4. Select `Install Extension`
-5. Choose the extension
-6. Reload Visual Studio Code
-
-![Install Extension](images/install-extension.gif)
+1. You can add your own snippets to your Visual Studio installation by using the Code Snippets Manager. Open the Code Snippets Manager (**Tools/Code Snippets Manager**).
+2. Click the **Import** button
+3. Go to the location where you saved the code snippet, select it, and click **Open**.
+4. The **Import Code Snippet** dialog opens, asking you to choose where to add the snippet from the choices in the right pane. One of the choices should be **My Code Snippets**. Select it and click **Finish**, then **OK**.
+5. Use 

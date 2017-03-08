@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<CodeSnippets  
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+    <CodeSnippet Format="1.0.0">  
+        <Header>  
+            <Title>Angular Directive</Title>  
+            <Description>Angular directive snippet</Description>  
+            <Shortcut>ngxDirective</Shortcut>  
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>  
+        <Snippet>  
+            <Declarations>
+                <Literal>
+                    <ID>feature</ID>
+                    <Default>feature</Default>
+                </Literal>  
+                <Literal>
+                    <ID>Feature</ID>
+                    <Default>Feature</Default>
+                </Literal>                                               
+            </Declarations>
+            <Code Language="TypeScript">  
+                <![CDATA[import { Directive } from '@angular/core';
+                
+                @Directive({ selector: '[${feature}]' })
+                export class ${Feature}Directive {
+                    constructor() {
+
+                    }
+                }
+                ]]>  
+            </Code>  
+        </Snippet>  
+    </CodeSnippet>  
+</CodeSnippets>  

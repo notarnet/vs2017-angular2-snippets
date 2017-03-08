@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<CodeSnippets  
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+    <CodeSnippet Format="1.0.0">  
+        <Header>  
+            <Title>Angular Root Module</Title>  
+            <Description>Angular Root Module snippet</Description>  
+            <Shortcut>ngxModuleRoot</Shortcut>  
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>  
+        <Snippet>  
+            <Declarations>
+                <Literal>
+                    <ID>app</ID>
+                    <Default>app</Default>
+                </Literal>  
+                <Literal>
+                    <ID>App</ID>
+                    <Default>App</Default>
+                </Literal>                                               
+            </Declarations>
+            <Code Language="TypeScript">  
+                <![CDATA[import { NgModule } from '@angular/core';
+                import { BrowserModule  } from '@angular/platform-browser';
+                import { HttpModule } from '@angular/http';
+                
+                import { $App$Component } from './$app$.component';
+                import { AppRoutingModule } from './$app$.routing'; //TODO: Create $app$.routing
+                
+                @NgModule({
+                    imports: [
+                        BrowserModule,
+                        HttpModule,
+                    
+                        AppRoutingModule,
+                    ],
+                    declarations: [$App$Component],
+                    providers: [/* TODO: Providers go here */],
+                    bootstrap: [$App$Component],
+                })
+                export class $App$Module { }
+
+                ]]>  
+            </Code>  
+        </Snippet>  
+    </CodeSnippet>  
+</CodeSnippets>  

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<CodeSnippets  
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+    <CodeSnippet Format="1.0.0">  
+        <Header>  
+            <Title>Angular Component</Title>  
+            <Description>Angular component snippet</Description>  
+            <Shortcut>ngxComponent</Shortcut>  
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>  
+        <Snippet>  
+            <Declarations>
+                <Literal>
+                    <ID>selector</ID>
+                    <Default>my-component</Default>
+                </Literal>
+                <Literal>
+                    <ID>feature</ID>
+                    <Default>feature</Default>
+                </Literal>
+                <Literal>
+                    <ID>Feature</ID>
+                    <Default>Feature</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="TypeScript">  
+                <![CDATA[import { Component, OnInit } from '@angular/core';
+                
+                @Component({
+                    moduleId: module.id,
+                    selector: '$selector$',
+                    templateUrl: '$feature$.component.html'
+                })
+                
+                export class $Feature$Component implements OnInit {
+                    constructor() { }
+                
+                    ngOnInit() { }
+                }
+                ]]>  
+            </Code>  
+        </Snippet>  
+    </CodeSnippet>  
+</CodeSnippets>  
