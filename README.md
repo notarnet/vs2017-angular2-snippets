@@ -28,4 +28,4 @@ ngxSubscribe       // Angular Rx Observable subscription
 2. Click the **Import** button
 3. Go to the location where you saved the code snippet, select it, and click **Open**.
 4. The **Import Code Snippet** dialog opens, asking you to choose where to add the snippet from the choices in the right pane. One of the choices should be **My Code Snippets**. Select it and click **Finish**, then **OK**.
-5. Use 
+5. Use the snippets.
